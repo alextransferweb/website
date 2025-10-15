@@ -1,0 +1,18 @@
+.button {
+  padding: 8px 12px;
+  border-radius: 16px;
+  transition: background 0.2s ease-out;
+
+  color: var(--main-white);
+  background: var(--main-blue);
+
+  cursor: pointer;
+  border: none;
+
+  font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--main-green);
+}

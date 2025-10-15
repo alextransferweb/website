@@ -1,0 +1,84 @@
+.selectContainer {
+  position: relative;
+  min-width: 150px;
+}
+
+.selectButton {
+  position: relative;
+  z-index: 1001;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--main-white);
+  padding: 8px 12px;
+  border: 1px solid var(--main-grey);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.selectButton:hover,
+.selectButton:focus {
+  background: var(--secondary-white);
+  border-color: var(--main-grey);
+}
+
+.selectButtonOpen {
+  border-color: var(--main-grey);
+}
+
+.selectArrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+  transform: rotate(0deg);
+}
+
+.selectArrowOpen {
+  transform: rotate(180deg);
+}
+
+.selectDropdown {
+  padding-top: 8px;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  right: 0;
+  background: var(--main-white);
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: var(--main-shadow);
+  z-index: 1000;
+  max-height: 0;
+  transition: max-height 0.2s ease;
+}
+
+.selectDropdownOpen {
+  max-height: 200px;
+}
+
+.selectOption {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.selectOption:hover,
+.selectOption:focus {
+  background: var(--secondary-white);
+}
+
+.selectOptionSelected {
+  background: var(--light-blue);
+  font-weight: 500;
+}
+
+.selectOptionSelected:hover,
+.selectOptionSelected:focus {
+  background: var(--light-blue);
+}

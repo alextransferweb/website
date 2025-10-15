@@ -1,0 +1,191 @@
+.headerPositionWrapper {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.headerWrapper {
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--main-white);
+  box-shadow: var(--main-shadow);
+}
+
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigationBox {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 4px 6px;
+  color: var(--main-blue);
+  transition: color 0.3s ease-out;
+
+  position: relative;
+  display: inline-block;
+}
+
+.navigationBox::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-green);
+  transition: all 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.navigationBox:hover,
+.navigationBox:focus {
+  color: var(--main-green);
+}
+
+.navigationBox:hover::after,
+.navigationBox:focus::after {
+  width: 100%;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.optionWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.optionWrapper img {
+  border-radius: 50%;
+}
+
+.mediaWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.mediaLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.viber {
+  background-color: #665cac;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.telegram {
+  background-color: #2ca5e0;
+}
+
+.phoneBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease-out;
+}
+
+.phoneBox:hover,
+.phoneBox:focus {
+  color: var(--main-green);
+}
+
+.connectBox {
+  display: grid;
+  gap: 4px;
+}
+
+.menuBox {
+  display: none;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.selectBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerAccordionWrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--main-white);
+  transition: all 0.3s ease-out;
+  box-shadow: var(--main-shadow);
+}
+
+.navigationMobileWrapper {
+  display: grid;
+  gap: 12px;
+  padding: 8px 12px;
+}
+
+.connectMobileBox {
+  display: none;
+  padding: 8px 20px;
+  width: fit-content;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .menuBox {
+    display: block;
+  }
+
+  .navigationWrapper {
+    display: none;
+  }
+
+  .headerAccordionWrapper {
+    display: block;
+  }
+
+  .headerAccordionWrapperOpen {
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .connectBox {
+    display: none;
+  }
+
+  .connectMobileBox {
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mobileLogo {
+    display: block;
+  }
+
+  .webLogo {
+    display: none;
+  }
+}
