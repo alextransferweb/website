@@ -6,10 +6,10 @@ import { useState } from "react";
 import { AnimatedBurger, CustomSelect } from "@/components";
 import { FacebookIcon, ViberIcon, TelegramIcon, PhoneIcon } from "../icons";
 
-import { useLang } from "@/app/providers/LangProvider";
+import { useLang } from "@/providers/LangProvider";
 import { ERoutes } from "@/constants/routes";
 
-import { ELanguage } from "@/app/languages/types";
+import { ELanguage } from "@/languages/types";
 
 import styles from "./header.module.css";
 
@@ -106,48 +106,118 @@ const Header = () => {
   ];
 
   return (
-    <div className={styles.headerPositionWrapper}>
-      <div className={styles.headerWrapper}>
-        <Link href={ERoutes.HOMEPAGE}>
-          <Image
-            src="/Logo_extended.svg"
-            alt="Logo"
-            width={240}
-            height={48}
-            className={styles.webLogo}
-          />
-          <Image
-            src="/Logo.svg"
-            alt="Logo"
-            width={48}
-            height={48}
-            className={styles.mobileLogo}
-          />
-        </Link>
-        <div className={styles.navigationWrapper}>
-          <Link href={ERoutes.ADVANTAGES}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.ADVANTAGES]}
-            </div>
+    <div>
+      <div className={styles.headerPositionWrapper}>
+        <div className={styles.headerWrapper}>
+          <Link href={ERoutes.HOMEPAGE}>
+            <Image
+              src="/Logo_extended.svg"
+              alt="Logo"
+              width={240}
+              height={48}
+              className={styles.webLogo}
+            />
+            <Image
+              src="/Logo.svg"
+              alt="Logo"
+              width={48}
+              height={48}
+              className={styles.mobileLogo}
+            />
           </Link>
-          <Link href={ERoutes.ROUTES}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.ROUTES]}
+          <div className={styles.navigationWrapper}>
+            <Link href={ERoutes.ADVANTAGES}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.ADVANTAGES]}
+              </div>
+            </Link>
+            <Link href={ERoutes.ROUTES}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.ROUTES]}
+              </div>
+            </Link>
+            <Link href={ERoutes.REVIEWS}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.REVIEWS]}
+              </div>
+            </Link>
+            <Link href={ERoutes.CUSTOM}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.CUSTOM]}
+              </div>
+            </Link>
+          </div>
+          <div className={styles.infoBox}>
+            <div className={styles.connectBox}>
+              <a href="tel:+380666252225" className={styles.phoneBox}>
+                <PhoneIcon /> +380666252225
+              </a>
+
+              <div className={styles.mediaWrapper}>
+                <a
+                  target="blank"
+                  href="https://www.facebook.com/AlexTransfer.net/"
+                  className={`${styles.mediaLink} ${styles.facebook}`}
+                >
+                  <FacebookIcon />
+                </a>
+                <a
+                  target="blank"
+                  href="https://invite.viber.com/?g2=AQB1vH1xNqwGeEp%2Fo3%2FalUiToTjmnAQV3G%2B%2FiAlwFqTPOqaOhsKwE12Lv4J88qY1&lang=uk"
+                  className={`${styles.mediaLink} ${styles.viber}`}
+                >
+                  <ViberIcon />
+                </a>
+                <a
+                  target="blank"
+                  href="https://t.me/alex_litva_zp"
+                  className={`${styles.mediaLink} ${styles.telegram}`}
+                >
+                  <TelegramIcon />
+                </a>
+              </div>
             </div>
-          </Link>
-          <Link href={ERoutes.REVIEWS}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.REVIEWS]}
+
+            <div className={styles.selectBox}>
+              <CustomSelect
+                options={LANGUAGE_OPTIONS}
+                defaultValue={lang}
+                onChange={(newLang) => setLang(newLang)}
+              />
+              <div className={styles.menuBox} onClick={() => setOpen(!open)}>
+                <AnimatedBurger />
+              </div>
             </div>
-          </Link>
-          <Link href={ERoutes.CUSTOM}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.CUSTOM]}
-            </div>
-          </Link>
+          </div>
         </div>
-        <div className={styles.infoBox}>
-          <div className={styles.connectBox}>
+        <div
+          className={`${styles.headerAccordionWrapper} ${
+            open ? styles.headerAccordionWrapperOpen : ""
+          }`}
+        >
+          <div className={styles.navigationMobileWrapper}>
+            <Link href={ERoutes.ADVANTAGES}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.ADVANTAGES]}
+              </div>
+            </Link>
+            <Link href={ERoutes.ROUTES}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.ROUTES]}
+              </div>
+            </Link>
+            <Link href={ERoutes.REVIEWS}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.REVIEWS]}
+              </div>
+            </Link>
+            <Link href={ERoutes.CUSTOM}>
+              <div className={styles.navigationBox}>
+                {language[ELanguage.CUSTOM]}
+              </div>
+            </Link>
+          </div>
+          <div className={styles.connectMobileBox}>
             <a href="tel:+380666252225" className={styles.phoneBox}>
               <PhoneIcon /> +380666252225
             </a>
@@ -176,76 +246,9 @@ const Header = () => {
               </a>
             </div>
           </div>
-
-          <div className={styles.selectBox}>
-            <CustomSelect
-              options={LANGUAGE_OPTIONS}
-              defaultValue={lang}
-              onChange={(newLang) => setLang(newLang)}
-            />
-            <div className={styles.menuBox} onClick={() => setOpen(!open)}>
-              <AnimatedBurger />
-            </div>
-          </div>
         </div>
       </div>
-      <div
-        className={`${styles.headerAccordionWrapper} ${
-          open ? styles.headerAccordionWrapperOpen : ""
-        }`}
-      >
-        <div className={styles.navigationMobileWrapper}>
-          <Link href={ERoutes.ADVANTAGES}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.ADVANTAGES]}
-            </div>
-          </Link>
-          <Link href={ERoutes.ROUTES}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.ROUTES]}
-            </div>
-          </Link>
-          <Link href={ERoutes.REVIEWS}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.REVIEWS]}
-            </div>
-          </Link>
-          <Link href={ERoutes.CUSTOM}>
-            <div className={styles.navigationBox}>
-              {language[ELanguage.CUSTOM]}
-            </div>
-          </Link>
-        </div>
-        <div className={styles.connectMobileBox}>
-          <a href="tel:+380666252225" className={styles.phoneBox}>
-            <PhoneIcon /> +380666252225
-          </a>
-
-          <div className={styles.mediaWrapper}>
-            <a
-              target="blank"
-              href="https://www.facebook.com/AlexTransfer.net/"
-              className={`${styles.mediaLink} ${styles.facebook}`}
-            >
-              <FacebookIcon />
-            </a>
-            <a
-              target="blank"
-              href="https://invite.viber.com/?g2=AQB1vH1xNqwGeEp%2Fo3%2FalUiToTjmnAQV3G%2B%2FiAlwFqTPOqaOhsKwE12Lv4J88qY1&lang=uk"
-              className={`${styles.mediaLink} ${styles.viber}`}
-            >
-              <ViberIcon />
-            </a>
-            <a
-              target="blank"
-              href="https://t.me/alex_litva_zp"
-              className={`${styles.mediaLink} ${styles.telegram}`}
-            >
-              <TelegramIcon />
-            </a>
-          </div>
-        </div>
-      </div>
+      <div className={styles.headerSpace} />
     </div>
   );
 };

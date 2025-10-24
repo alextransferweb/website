@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { Header } from "@/components";
-import { LangProvider } from "./providers/LangProvider";
+import { LangProvider } from "../providers/LangProvider";
 
-import { getLanguage, TLanguage } from "./languages";
+import { getLanguage, TLanguage } from "../languages";
 
 import "./globals.css";
 

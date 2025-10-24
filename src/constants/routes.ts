@@ -1,4 +1,4 @@
-import { ELanguage } from "@/app/languages/types";
+import { ELanguage } from "@/languages/types";
 
 export enum ERoutes {
     HOMEPAGE = "/",

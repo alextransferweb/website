@@ -1,5 +1,11 @@
+import { HeroTemplate } from "@/templates";
+
 const Homepage = () => {
-  return <></>;
+  return (
+    <>
+      <HeroTemplate />
+    </>
+  );
 };
 
 export default Homepage;
