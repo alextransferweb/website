@@ -1,28 +1,57 @@
 import { ELanguage } from "@/languages/types";
 
-export enum ERoutes {
-    HOMEPAGE = "/",
-    ADVANTAGES = "/advantages",
-    ROUTES = "/routes",
-    REVIEWS = "/reviews",
-    CUSTOM = "/custom",
-}
-
-export const TOP_NAVIGATION = [
+export const DATA_ROUTES = [
     {
-        name: ELanguage.ADVANTAGES,
-        route: ERoutes.ADVANTAGES,
+        id: 0,
+        start: ELanguage.ZAPORIZHZHIA,
+        end: ELanguage.SIAULIAI,
+        img: 'cities/Siauliai-1.webp',
+        points: [
+            ELanguage.KAUNAS,
+            ELanguage.VILNIUS,
+        ],
+        price: 100,
     },
     {
-        name: ELanguage.ROUTES,
-        route: ERoutes.ROUTES,
+        id: 1,
+        start: ELanguage.KYIV,
+        end: ELanguage.SIAULIAI,
+        img: 'cities/Siauliai-2.webp',
+        points: [
+            ELanguage.ZHYTOMYR,
+            ELanguage.RIVNE,
+            ELanguage.VILNIUS,
+            ELanguage.KAUNAS,
+        ],
+        price: 80,
     },
     {
-        name: ELanguage.REVIEWS,
-        route: ERoutes.REVIEWS,
+        id: 2,
+        start: ELanguage.ZAPORIZHZHIA,
+        end: ELanguage.KLAIPEDA,
+        img: 'cities/klaipeda-1.webp',
+        points: [
+            ELanguage.DNIPRO,
+            ELanguage.POLTAVA,
+            ELanguage.KYIV,
+            ELanguage.KAUNAS,
+        ],
+        price: 110,
     },
     {
-        name: ELanguage.CUSTOM,
-        route: ERoutes.CUSTOM,
+        id: 3,
+        start: ELanguage.KYIV,
+        end: ELanguage.KLAIPEDA,
+        img: 'cities/klaipeda-2.webp',
+        points: [],
+        price: 80,
+    },
+    {
+        id: 4,
+        start: ELanguage.DNIPRO,
+        end: ELanguage.SIAULIAI,
+        img: 'cities/Siauliai-3.webp',
+        points: [],
+        price: 100,
     },
 ]

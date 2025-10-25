@@ -1,0 +1,17 @@
+.ourRoutesWrapper {
+  background-image: url("/map.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.ourRoutesTitleBox {
+  padding: 30px 0;
+  font-size: 50px;
+  text-align: center;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+}
+
+.ourRoutesTitleBox h3::first-letter {
+  text-transform: uppercase;
+}

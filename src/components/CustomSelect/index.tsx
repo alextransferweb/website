@@ -40,6 +40,10 @@ const CustomSelect = ({ options, defaultValue, onChange }: IProps) => {
     );
   }, [options]);
 
+  useEffect(() => {
+    setSelected(options.find((el) => el.value === defaultValue) || null);
+  }, [defaultValue]);
+
   const handleSelect = (option: ICustomSelectOption) => {
     setSelected(option);
     setIsOpen(false);

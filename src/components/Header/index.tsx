@@ -7,7 +7,7 @@ import { AnimatedBurger, CustomSelect } from "@/components";
 import { FacebookIcon, ViberIcon, TelegramIcon, PhoneIcon } from "../icons";
 
 import { useLang } from "@/providers/LangProvider";
-import { ERoutes } from "@/constants/routes";
+import { ERoutes } from "@/constants/routesNavigation.data";
 
 import { ELanguage } from "@/languages/types";
 

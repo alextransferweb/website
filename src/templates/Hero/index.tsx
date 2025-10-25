@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 
+import { Button } from "@/components";
+
 import { useLang } from "@/providers/LangProvider";
 
 import { ELanguage } from "@/languages/types";
 
 import styles from "./hero.module.css";
-import { Button } from "@/components";
 
 const HeroTemplate = () => {
   const { language } = useLang();
