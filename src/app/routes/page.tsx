@@ -1,5 +1,11 @@
+import { OurRoutesTemplate } from "@/templates";
+
 const Homepage = () => {
-  return <></>;
+  return (
+    <>
+      <OurRoutesTemplate />
+    </>
+  );
 };
 
 export default Homepage;

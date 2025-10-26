@@ -1,7 +1,7 @@
 .button {
   padding: 8px 12px;
   border-radius: 16px;
-  transition: background 0.2s ease-out;
+  transition: all 0.3s ease-out;
 
   color: var(--main-white);
   background: var(--main-blue);
@@ -15,4 +15,5 @@
 .button:hover,
 .button:focus {
   background: var(--main-green);
+  box-shadow: var(--green-shadow);
 }
