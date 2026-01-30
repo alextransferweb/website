@@ -61,6 +61,15 @@ const EN: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'our routes',
     [ELanguage.THROUGH]: 'through',
     [ELanguage.ORDER_A_ROUTE]: 'order a route',
+
+    // Parcels
+    [ELanguage.PARCELS]: 'transfer of parcels',
+    [ELanguage.PARCELS_DESCRIPTION]: "People often contact us asking to deliver documents to an address or to pass personal belongings to their relatives and loved ones. Call us and we will gladly help you!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Our company also provides parcel delivery services from Ukraine to Lithuania and back.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "We accept parcels from all over Ukraine.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "If you are from another city, you can send us a parcel via Nova Poshta to Kryvyi Rih.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "There is a service for direct door-to-door parcel delivery to the client.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "We guarantee the safety and integrity of your parcel during transportation."
 };
 
 export default EN;

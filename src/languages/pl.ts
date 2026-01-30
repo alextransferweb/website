@@ -61,6 +61,15 @@ const PL: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'nasze trasy',
     [ELanguage.THROUGH]: 'przez',
     [ELanguage.ORDER_A_ROUTE]: 'zamów trasę',
+
+    // Parcels
+    [ELanguage.PARCELS]: "przekazywanie paczek",
+    [ELanguage.PARCELS_DESCRIPTION]: "Bardzo często zwracają się do nas ludzie z prośbą o dostarczenie dokumentów pod wskazany adres lub przekazanie rzeczy osobistych swoim bliskim. Zadzwoń do nas, a chętnie pomożemy!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Nasza firma świadczy również usługi przekazywania paczek z Ukrainy na Litwę i z powrotem.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "Przyjmujemy paczki z całej Ukrainy.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "Jeśli jesteś z innego miasta, możesz wysłać do nas paczkę Nową Pocztą do Krzywego Rogu.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "Dostępna jest usługa bezpośredniej dostawy paczki pod adres klienta.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "Gwarantujemy nienaruszalność przesyłki podczas transportu."
 };
 
 export default PL;

@@ -1,9 +1,10 @@
-import { OurRoutesTemplate } from "@/templates";
+import { OurRoutesTemplate, ParcelsTemplate } from "@/templates";
 
 const Homepage = () => {
   return (
     <>
       <OurRoutesTemplate />
+      <ParcelsTemplate />
     </>
   );
 };

@@ -61,6 +61,15 @@ const UA: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'наші маршрути',
     [ELanguage.THROUGH]: 'через',
     [ELanguage.ORDER_A_ROUTE]: 'замовити маршрут',
+
+    // Parcels
+    [ELanguage.PARCELS]: "передача посилок",
+    [ELanguage.PARCELS_DESCRIPTION]: "Дуже часто до нас звертаються люди з проханням доставити документи за адресою або передати особисті речі своїм рідним і близьким. Телефонуйте, і ми з радістю вам допоможемо!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Наша компанія також надає послуги передачі посилок з України до Литви та у зворотному напрямку.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "Приймаємо посилки з усієї України.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "Якщо ви з іншого міста, можете надіслати нам посилку Новою Поштою до м. Кривий Ріг.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "Є послуга прямої адресної доставки посилки клієнту.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "Гарантуємо цілісність під час перевезення."
 };
 
 export default UA;

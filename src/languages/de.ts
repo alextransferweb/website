@@ -61,6 +61,15 @@ const DE: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'unsere Routen',
     [ELanguage.THROUGH]: 'durch',
     [ELanguage.ORDER_A_ROUTE]: 'Route bestellen',
+
+    // Parcels
+    [ELanguage.PARCELS]: "Übertragung von Paketen",
+    [ELanguage.PARCELS_DESCRIPTION]: "Sehr oft wenden sich Menschen an uns mit der Bitte, Dokumente an eine Adresse zu liefern oder persönliche вещи an ihre Verwandten und Angehörigen zu übergeben. Rufen Sie uns an und wir helfen Ihnen gerne!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Unser Unternehmen bietet auch den Versand von Paketen aus der Ukraine nach Litauen und обратно an.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "Wir nehmen Pakete aus der ganzen Ukraine an.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "Wenn Sie aus einer anderen Stadt kommen, können Sie uns ein Paket per Nova Poshta nach Krywyj Rih senden.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "Es gibt einen Service zur direkten Zustellung des Pakets an die Adresse des Kunden.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "Wir garantieren die Unversehrtheit beim Transport."
 };
 
 export default DE;

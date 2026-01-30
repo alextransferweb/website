@@ -59,4 +59,13 @@ export enum ELanguage {
     OUR_ROUTES = "our routes",
     THROUGH = "through",
     ORDER_A_ROUTE = "order a route",
+
+    // Parcels
+    PARCELS = "transfer of parcels",
+    PARCELS_DESCRIPTION = "parcel description",
+    PARCELS_INFO_OPTION_1 = "parcel info option 1",
+    PARCELS_INFO_OPTION_2 = "parcel info option 2",
+    PARCELS_INFO_OPTION_3 = "parcel info option 3",
+    PARCELS_INFO_OPTION_4 = "parcel info option 4",
+    PARCELS_INFO_OPTION_5 = "parcel info option 5",
 }

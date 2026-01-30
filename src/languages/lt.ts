@@ -61,6 +61,15 @@ const LT: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'mūsų maršrutai',
     [ELanguage.THROUGH]: 'per',
     [ELanguage.ORDER_A_ROUTE]: 'užsakyti maršrutą',
+
+    // Parcels
+    [ELanguage.PARCELS]: "siuntų perdavimas",
+    [ELanguage.PARCELS_DESCRIPTION]: "Labai dažnai žmonės kreipiasi į mus su prašymu pristatyti dokumentus nurodytu adresu arba perduoti asmeninius daiktus savo artimiesiems. Skambinkite ir mes mielai jums padėsime!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Mūsų įmonė taip pat teikia siuntų perdavimo paslaugas iš Ukrainos į Lietuvą ir atgal.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "Priimame siuntas iš visos Ukrainos.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "Jei esate iš kito miesto, galite atsiųsti mums siuntą per „Nova Poshta“ į Kryvyj Rihą.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "Yra galimybė pristatyti siuntą tiesiogiai gavėjui nurodytu adresu.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "Garantuojame siuntos saugumą transportavimo metu."
 };
 
 export default LT;

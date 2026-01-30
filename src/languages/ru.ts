@@ -61,6 +61,15 @@ const RU: Record<ELanguage, string> = {
     [ELanguage.OUR_ROUTES]: 'наши маршруты',
     [ELanguage.THROUGH]: 'через',
     [ELanguage.ORDER_A_ROUTE]: 'заказать маршрут',
+
+    // Parcels
+    [ELanguage.PARCELS]: 'передача посылок',
+    [ELanguage.PARCELS_DESCRIPTION]: "Очень часто к нам обращаются люди с просьбой доставить документы по адресу, или же передать личные вещи своим родным и близким. Звоните и мы с радостью поможем Вам!",
+    [ELanguage.PARCELS_INFO_OPTION_1]: "Наша компания так же предоставляет услуги передачи посылок из Украины в Литву и обратно.",
+    [ELanguage.PARCELS_INFO_OPTION_2]: "Принимаем посылки со всей Украины.",
+    [ELanguage.PARCELS_INFO_OPTION_3]: "Если Вы из другого города, можете отправить посылку нам Новой Почтой в г. Кривой Рог.",
+    [ELanguage.PARCELS_INFO_OPTION_4]: "Есть услуга доставки посылки по адресу напрямую клиенту.",
+    [ELanguage.PARCELS_INFO_OPTION_5]: "Мы гарантируем целостность при перевозке."
 };
 
 export default RU;

@@ -1,15 +1,13 @@
 "use client";
 
-import Image from "next/image";
-
 import { Button } from "@/components";
 
 import { useLang } from "@/providers/LangProvider";
+import { DATA_ROUTES } from "@/constants/routes";
 
 import { ELanguage } from "@/languages/types";
 
 import styles from "./ourRoutes.module.css";
-import { DATA_ROUTES } from "@/constants/routes";
 
 const OurRoutesTemplate = () => {
   const { language } = useLang();
@@ -39,9 +37,15 @@ const OurRoutesTemplate = () => {
             </div>
             <div className={styles.cardPrice}>{el.price} €</div>
             <div className={styles.cardActionBox}>
-              <Button className={styles.cardAction}>
-                {language[ELanguage.ORDER_A_ROUTE]}
-              </Button>
+              <a
+                target="blank"
+                href="https://t.me/alex_litva_zp"
+                className={`${styles.mediaLink} ${styles.facebook}`}
+              >
+                <Button className={styles.cardAction}>
+                  {language[ELanguage.ORDER_A_ROUTE]}
+                </Button>
+              </a>
             </div>
           </div>
         ))}
