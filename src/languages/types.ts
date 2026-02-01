@@ -68,4 +68,6 @@ export enum ELanguage {
     PARCELS_INFO_OPTION_3 = "parcel info option 3",
     PARCELS_INFO_OPTION_4 = "parcel info option 4",
     PARCELS_INFO_OPTION_5 = "parcel info option 5",
+
+    // Customs
 }
