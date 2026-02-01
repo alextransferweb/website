@@ -1,10 +1,11 @@
-import { HeroTemplate, OurRoutesTemplate } from "@/templates";
+import { HeroTemplate, OurRoutesTemplate, ParcelsTemplate } from "@/templates";
 
 const Homepage = () => {
   return (
     <>
       <HeroTemplate />
       <OurRoutesTemplate />
+      <ParcelsTemplate />
     </>
   );
 };
